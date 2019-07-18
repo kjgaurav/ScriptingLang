@@ -26,8 +26,20 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/1000
 _=/usr/bin/printenv
 
-
-
 PID of running shell
 $ echo $$
 3190
+
+To check if cron is running
+$ service crond status
+Redirecting to /bin/systemctl status crond.service
+● crond.service - Command Scheduler
+   Loaded: loaded (/usr/lib/systemd/system/crond.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2019-07-18 05:51:17 UTC; 1h 30min ago
+ Main PID: 1734 (crond)
+   CGroup: /system.slice/crond.service
+           └─1734 /usr/sbin/crond -n
+
+Jul 18 05:51:17 localhost systemd[1]: Started Command Scheduler.
+Jul 18 05:51:17 localhost crond[1734]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 64% if used.)
+Jul 18 05:51:18 localhost crond[1734]: (CRON) INFO (running with inotify support)
