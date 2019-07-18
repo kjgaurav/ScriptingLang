@@ -43,3 +43,22 @@ Redirecting to /bin/systemctl status crond.service
 Jul 18 05:51:17 localhost systemd[1]: Started Command Scheduler.
 Jul 18 05:51:17 localhost crond[1734]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 64% if used.)
 Jul 18 05:51:18 localhost crond[1734]: (CRON) INFO (running with inotify support)
+
+All user cronjobs resides:
+$ sudo ls /var/spool/cron/
+List cron jobs
+$ crontab -l
+no crontab for rsa-key-20190610
+
+Edit cron jobs
+$ crontab -e
+no crontab for rsa-key-20190610 - using an empty one
+crontab: no changes made to crontab
+
+* * * * * command
+min
+hour
+day of month
+month
+day of the week
+
