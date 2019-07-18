@@ -28,3 +28,6 @@ _=/usr/bin/printenv
 
 
 
+PID of running shell
+$ echo $$
+3190
