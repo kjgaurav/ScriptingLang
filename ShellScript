@@ -62,3 +62,9 @@ day of month
 month
 day of the week
 
+
+exit status
+$ ls
+hello.sh
+$ echo $?
+0
