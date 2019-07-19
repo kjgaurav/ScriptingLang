@@ -71,3 +71,10 @@ $ echo $?
 
 Getting Yesterdays or Tomorrows Day With Bash Shell Date Command
 https://www.cyberciti.biz/tips/linux-unix-get-yesterdays-tomorrows-date.html
+
+bc command in Linux with examples
+https://www.geeksforgeeks.org/bc-command-linux-examples/
+$ sudo yum install -y bc
+$ a=3;b=4;echo "$a/$b" | bc -l
+.75000000000000000000
+
