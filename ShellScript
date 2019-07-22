@@ -107,3 +107,12 @@ datetime=`echo $line | cut -f2 -d"[" | cut -f1 -d"]"`
 mysql -u logs -plogslogs -e "use apache; INSERT INTO logs (IP,date) VALUES (\"$IP\",\"$datetime\")";
 sudo cp /dev/null /var/log/httpd/access_log
 done
+
+
+$ last -a
+rsa-key- pts/0        Mon Jul 22 05:22   still logged in    183.83.158.231
+reboot   system boot  Mon Jul 22 05:20 - 05:24  (00:03)     3.10.0-957.21.3.el7.x86_64
+rsa-key- pts/0        Fri Jul 19 13:19 - 14:35  (01:15)     183.83.158.231
+reboot   system boot  Fri Jul 19 13:19 - 14:36  (01:16)     3.10.0-957.21.3.el7.x86_64
+
+wtmp begins Fri Jul 19 13:19:19 2019
