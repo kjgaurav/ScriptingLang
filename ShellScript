@@ -116,3 +116,10 @@ rsa-key- pts/0        Fri Jul 19 13:19 - 14:35  (01:15)     183.83.158.231
 reboot   system boot  Fri Jul 19 13:19 - 14:36  (01:16)     3.10.0-957.21.3.el7.x86_64
 
 wtmp begins Fri Jul 19 13:19:19 2019
+
+
+readlink - print resolved symbolic links or canonical file names
+$ readlink -f $HOME
+/home/rsa-key-20190610
+$ man readlink
+
