@@ -123,3 +123,5 @@ $ readlink -f $HOME
 /home/rsa-key-20190610
 $ man readlink
 
+https://ss64.com/
+Command line reference – Database and OS scripting
